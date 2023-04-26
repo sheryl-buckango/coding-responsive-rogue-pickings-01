@@ -52,13 +52,20 @@ p {
 header {
 	display: flex;
 	justify-content: center;
+	
 
 }
 
 header h1 {
+	
 	width:100%;
 	margin: 0;
-	padding: 38px 0;
+	padding: 38px 0 20px 0;
+	display: flex;
+  justify-content: center;
+	border-color: #45610E;
+	border-bottom: solid;
+	
 }
 
 header h1 span {
@@ -80,7 +87,7 @@ header nav ul li {
 	font-size: 14px;
 	font-weight: 700;
 	text-transform: uppercase;
-	padding: 0 10px;
+	padding:10px 0;
 	list-style: none;
 }
 
@@ -96,6 +103,7 @@ header nav ul li a {
 	width: 100%;
 	border-top: 3px solid #77A466;
 	border-bottom: 3px solid #77a466;
+	
 }
 
 
