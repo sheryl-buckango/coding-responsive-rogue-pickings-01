@@ -63,9 +63,7 @@ header h1 {
 	padding: 38px 0 20px 0;
 	display: flex;
   justify-content: center;
-	border-color: #45610E;
-	border-bottom: solid;
-	
+	border-bottom: 3px solid #77A466;	
 }
 
 header h1 span {
@@ -75,11 +73,13 @@ header h1 span {
 header nav {
 
 	padding: 46px 0;
+	
 }
 
 header nav ul {
 	margin: 0;
 	padding: 0;
+	text-align: center;
 }
 
 header nav ul li {
@@ -102,7 +102,7 @@ header nav ul li a {
 .main-image img {
 	width: 100%;
 	border-top: 3px solid #77A466;
-	border-bottom: 3px solid #77a466;
+	border-bottom: 3px solid #77A466;
 	
 }
 
@@ -119,35 +119,42 @@ header nav ul li a {
 	justify-content: center;
 }
 
-.bottom-section .content-wrapper {
+.bottom-section .section-one,
+								.section-two, 
+								.section-three 
+{
 	border-top: 5px solid #EEE;
-	border-bottom: 5px solid #EEE;
 }
 
 .section-one,
 .section-two,
 .section-three {
 	box-sizing: border-box;
-	padding: 0 40px;
+	/*padding: 0 40px; took it off for left align*/
 	width:100%;
+	
 }
 
-.section-one {
+.section-one h1 {
 	/*width: 29%;*/
+	margin: 30px 0;
 }
 
-.section-two {
-	/*width: 42%;*/
+.section-two h2{
+	/*width: 42%;
 	border-left: 5px solid #EEE;
-	border-right: 5px solid #EEE;
+	border-right: 5px solid #EEE;*/
+	margin: 30px 0;
 }
 
-.section-three {
+.section-three h3{
 	/*width: 29%;*/
+	margin: 30px 0;
 }
 
 .bottom-section h3 {
 	margin: 30px 0;
+	
 }
 
 .menu-list {
@@ -164,6 +171,7 @@ header nav ul li a {
 /******** FOOTER STYLES ********/
 /* The widths are in a percentage! */
 footer {
+	border-top: 5px solid #EEE;
 	text-align: center;
 	margin-top: 8px;
 	display: flex;
