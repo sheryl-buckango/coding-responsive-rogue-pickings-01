@@ -52,17 +52,13 @@ p {
 header {
 	display: flex;
 	justify-content: center;
-	
-
+	text-align: center;
 }
 
 header h1 {
-	
 	width:100%;
 	margin: 0;
 	padding: 38px 0 20px 0;
-	display: flex;
-  justify-content: center;
 	border-bottom: 3px solid #77A466;	
 }
 
@@ -71,15 +67,13 @@ header h1 span {
 }
 
 header nav {
-
-	padding: 46px 0;
-	
+	padding: 20px 0;
 }
 
 header nav ul {
 	margin: 0;
 	padding: 0;
-	text-align: center;
+	list-style: none;
 }
 
 header nav ul li {
@@ -88,7 +82,6 @@ header nav ul li {
 	font-weight: 700;
 	text-transform: uppercase;
 	padding:10px 0;
-	list-style: none;
 }
 
 header nav ul li a {
@@ -106,7 +99,6 @@ header nav ul li a {
 	
 }
 
-
 .main-title h2 {
 	color: #45610E;
 	padding: 5px 0;
@@ -119,11 +111,10 @@ header nav ul li a {
 	justify-content: center;
 }
 
-.bottom-section .section-one,
-								.section-two, 
-								.section-three 
+.bottom-section .content-wrapper 
 {
 	border-top: 5px solid #EEE;
+	border-bottom: 5px solid #EEE
 }
 
 .section-one,
@@ -135,26 +126,16 @@ header nav ul li a {
 	
 }
 
-.section-one h1 {
-	/*width: 29%;*/
-	margin: 30px 0;
-}
-
-.section-two h2{
+.section-two{
 	/*width: 42%;
 	border-left: 5px solid #EEE;
 	border-right: 5px solid #EEE;*/
-	margin: 30px 0;
-}
-
-.section-three h3{
-	/*width: 29%;*/
-	margin: 30px 0;
+	border-top: 5px solid #EEE;
+	border-bottom: 5px solid #EEE;
 }
 
 .bottom-section h3 {
 	margin: 30px 0;
-	
 }
 
 .menu-list {
@@ -171,8 +152,6 @@ header nav ul li a {
 /******** FOOTER STYLES ********/
 /* The widths are in a percentage! */
 footer {
-	border-top: 5px solid #EEE;
-	text-align: center;
 	margin-top: 8px;
 	display: flex;
 	justify-content: center;
@@ -183,4 +162,60 @@ footer span {
 	text-transform: lowercase;
 	color: #45610E;
 	font-size: 14px;
+}
+
+/* MEDIA BREAKS*/
+/*Tablet*/
+@media all and (min-width:768px){
+	/******** BOTTOM SECTION ********/
+	.bottom-section .content-wrapper {
+		justify-content: space-evenly;
+	}
+
+	.section-one{
+		width: 26%;
+	}
+
+	.section-two{
+		width: 40%;
+		margin: 30px 0;
+		border-left: 5px solid  #EEE;
+		border-right: 5px solid  #EEE;
+		border-top: none;
+		border-bottom: none;
+	}
+
+	.section-three{
+		width: 26%;
+	}
+}
+/*DESKTOP*/
+@media all and (min-width:1200px){
+	/******** GLOBAL STYLES ********/
+	body{
+		font-size: 1em;
+	}
+
+	header .content-wrapper {
+		align-items: center;
+		justify-content: space-between;
+		padding: 20px 0;
+	}
+
+	header h1 {
+		width:30%;
+		text-align:left;
+		padding: 0;
+		border-bottom: none;	
+	}
+
+	header nav {
+		width:21%;
+	}
+
+	header nav ul {
+		display: flex;
+		justify-content: space-between;
+	}
+
 }
